@@ -93,6 +93,12 @@ export function ProjectInquiryForm() {
     } else if (!/^[+]?[\d\s-]{8,20}$/.test(formData.whatsapp)) {
       newErrors.whatsapp = "Invalid format";
     }
+    
+    if (!formData.email.trim()) {
+      newErrors.email = "Required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = "Invalid email";
+    }
 
     if (formData.services.length === 0) {
       newErrors.services = "Please select a service";
@@ -194,10 +200,10 @@ export function ProjectInquiryForm() {
             </div>
             <div>
               <label className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-2 block ml-1">WhatsApp Number *</label>
-              <input type="tel" className={`w-full bg-background border ${errors.whatsapp ? 'border-red-500' : 'border-border/50'} rounded-2xl px-5 py-4 text-[14px] text-foreground focus:outline-none focus:ring-2 focus:ring-[var(--olive)]/30 transition-all shadow-sm`} placeholder="+91" value={formData.whatsapp} onChange={e => { setFormData({...formData, whatsapp: e.target.value}); if (errors.whatsapp) setErrors({...errors, whatsapp: ""}) }} />
+              <input type="tel" className={`w-full bg-background border ${errors.whatsapp ? 'border-red-500' : 'border-border/50'} rounded-2xl px-5 py-4 text-[14px] text-foreground focus:outline-none focus:ring-2 focus:ring-[var(--olive)]/30 transition-all shadow-sm`} placeholder="+91 90000 00000" value={formData.whatsapp} onChange={e => { setFormData({...formData, whatsapp: e.target.value}); if (errors.whatsapp) setErrors({...errors, whatsapp: ""}) }} />
             </div>
             <div>
-              <label className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-2 block ml-1">Email</label>
+              <label className="text-[11px] font-semibold uppercase tracking-[0.2em] text-muted-foreground mb-2 block ml-1">Email *</label>
               <input type="email" className={`w-full bg-background border ${errors.email ? 'border-red-500' : 'border-border/50'} rounded-2xl px-5 py-4 text-[14px] text-foreground focus:outline-none focus:ring-2 focus:ring-[var(--olive)]/30 transition-all shadow-sm`} placeholder="name@company.com" value={formData.email} onChange={e => { setFormData({...formData, email: e.target.value}); if (errors.email) setErrors({...errors, email: ""}) }} />
             </div>
           </div>

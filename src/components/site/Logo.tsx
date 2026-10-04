@@ -8,7 +8,7 @@ export function Logo({ className = "" }: { className?: string }) {
       aria-label="Hevin — home"
     >
       <img
-        src="/logo.png"
+        src="/logo.png?v=2"
         alt="Hevin — logo"
         className="h-9 w-9 object-contain"
       />
