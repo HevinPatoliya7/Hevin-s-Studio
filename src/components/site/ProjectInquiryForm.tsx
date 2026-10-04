@@ -171,9 +171,9 @@ export function ProjectInquiryForm() {
             </div>
           </div>
           
-          <div className="mt-auto border-t border-border/40 pt-8">
-            <p className="font-display text-xl sm:text-2xl leading-relaxed text-foreground/80">
-              Share your vision with us. We personally review every brief and will connect shortly to begin crafting your next campaign.
+          <div className="mt-auto border-t border-[var(--olive)]/20 pt-8">
+            <p className="font-display text-xl sm:text-2xl leading-relaxed text-foreground/90">
+              A premium AI creative studio building high-converting, cinematic content that commands attention and elevates modern brands.
             </p>
           </div>
         </div>
