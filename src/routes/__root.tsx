@@ -15,6 +15,7 @@ import { Nav } from "@/components/site/Nav";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFab } from "@/components/site/WhatsAppFab";
 import { Loader } from "@/components/site/Loader";
+import { CustomCursor } from "@/components/site/CustomCursor";
 
 function NotFoundComponent() {
   return (
@@ -73,26 +74,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hevin — AI Ads, Social Media" },
+      { title: "Hevin Studio | Premier AI Agency in Gujarat & India" },
       {
         name: "description",
         content:
-          "Hevin is a premium AI creative studio producing AI ads, engaging social media posts that stops the scroll and drives results.",
+          "Hevin Studio is a premium AI Creative & Automation Agency in Ahmedabad, Gujarat. We specialize in AI video production, AI ads, WhatsApp automation, and custom web development to drive business growth.",
       },
-      { name: "author", content: "Hevin" },
+      {
+        name: "keywords",
+        content: "AI Agency, AI Automation Agency, AI Video Production, AI Video Ads, AI Creative Agency, AI Marketing Agency, AI Web Development, AI Solutions for Business, Business Automation Services, AI App Development, AI Agency Ahmedabad, AI Automation Agency Ahmedabad, AI Video Production Ahmedabad, AI Creative Agency Ahmedabad, AI Marketing Agency Ahmedabad, AI Web Development Ahmedabad, AI Automation Gujarat, AI Agency Gujarat, AI Video Ads Gujarat, AI Solutions for Businesses in Gujarat, AI Agency Rajkot, AI Automation Rajkot, AI Creative Studio Rajkot, AI Agency Surat, AI Agency Vadodara, AI Agency Gandhinagar, AI Video Generator for Business, AI Ad Video Creation, AI Reels, AI Social Media Videos, AI Product Video, AI Promotional Video, Business AI Automation, AI Workflow Automation, WhatsApp Automation, Custom Website Development, AI SaaS Development",
+      },
+      { name: "author", content: "Hevin Studio" },
       { name: "theme-color", content: "#6f7a3a" },
-      { property: "og:title", content: "Hevin — AI Ads, Social Media" },
+      { property: "og:title", content: "Hevin Studio | AI Agency, Automation & Video Production" },
       {
         property: "og:description",
         content:
-          "Hevin is a premium AI creative studio producing AI ads, engaging social media posts that stops the scroll and drives results.",
+          "Hevin Studio is a premium AI Creative & Automation Agency in Ahmedabad, Gujarat. We specialize in AI video production, AI ads, WhatsApp automation, and custom web development to drive business growth.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Hevin — AI Ads, Social Media" },
+      { name: "twitter:title", content: "Hevin Studio | AI Agency, Automation & Video Production" },
       {
         name: "twitter:description",
-        content: "Hevin is a premium AI creative studio producing AI ads, engaging social media posts that stops the scroll and drives results.",
+        content: "Hevin Studio is a premium AI Creative & Automation Agency in Ahmedabad, Gujarat. We specialize in AI video production, AI ads, WhatsApp automation, and custom web development to drive business growth.",
       },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/0QouOLJEq3To54A1VGZd50ZmLIO2/social-images/social-1784297207365-1000076782.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/0QouOLJEq3To54A1VGZd50ZmLIO2/social-images/social-1784297207365-1000076782.webp" },
@@ -135,6 +140,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
+        <CustomCursor />
         <Loader />
         <Nav />
         <main className="min-h-screen">
