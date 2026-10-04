@@ -28,9 +28,9 @@ export function Loader() {
         
         <div className="animate-fade-up relative z-10 flex flex-col items-center">
           <img 
-            src="/logo.png?v=2" 
+            src="/logo.png?v=3" 
             alt="Hevin Logo" 
-            className="w-28 h-28 object-contain transition-transform duration-1000 hover:scale-105"
+            className="w-40 h-40 object-contain transition-transform duration-1000 hover:scale-105"
             style={{ 
               animation: "float 3s ease-in-out infinite",
               filter: "drop-shadow(0px 8px 16px rgba(0,0,0,0.06))" 

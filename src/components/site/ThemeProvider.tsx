@@ -11,7 +11,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
-    const stored = (typeof window !== "undefined" && localStorage.getItem("Hevin-theme")) as Theme | null;
+    const stored = (typeof window !== "undefined" && localStorage.getItem("Hevion-theme")) as Theme | null;
     const initial: Theme = stored ?? "light";
     setTheme(initial);
     document.documentElement.classList.toggle("dark", initial === "dark");
@@ -22,7 +22,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       const next: Theme = prev === "dark" ? "light" : "dark";
       document.documentElement.classList.toggle("dark", next === "dark");
       try {
-        localStorage.setItem("Hevin-theme", next);
+        localStorage.setItem("Hevion-theme", next);
       } catch {}
       return next;
     });

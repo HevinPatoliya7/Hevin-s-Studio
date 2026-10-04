@@ -8,12 +8,12 @@ export function Logo({ className = "" }: { className?: string }) {
       aria-label="Hevin — home"
     >
       <img
-        src="/logo.png?v=2"
+        src="/logo.png?v=3"
         alt="Hevin — logo"
-        className="h-9 w-9 object-contain"
+        className="h-14 w-14 object-contain"
       />
       <span
-        className="font-display text-2xl leading-none tracking-tight text-foreground"
+        className="font-display text-3xl leading-none tracking-tight text-foreground"
         style={{ fontFamily: "var(--font-display)" }}
       >
         Hevin
