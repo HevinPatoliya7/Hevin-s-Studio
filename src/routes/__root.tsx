@@ -73,26 +73,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Hevin — AI Ads, Social Media" },
+      { title: "Hevion Studio | Top AI Creative & Automation Agency in Gujarat" },
       {
         name: "description",
         content:
-          "Hevin is a premium AI creative studio producing AI ads, engaging social media posts that stops the scroll and drives results.",
+          "Hevion Studio is a premium AI Creative Agency in Ahmedabad, Gujarat. We specialize in AI Video Production, Business Automation, AI Chatbots, and Custom Web Development.",
       },
-      { name: "author", content: "Hevin" },
+      {
+        name: "keywords",
+        content: "AI Agency, AI Automation Agency, AI Video Production, AI Video Ads, AI Creative Agency, AI Marketing Agency, AI Web Development, AI Solutions for Business, Business Automation Services, AI App Development, AI Agency Ahmedabad, AI Automation Agency Ahmedabad, AI Video Production Ahmedabad, AI Creative Agency Ahmedabad, AI Marketing Agency Ahmedabad, AI Web Development Ahmedabad, AI Automation Gujarat, AI Agency Gujarat, AI Video Ads Gujarat, AI Solutions for Businesses in Gujarat, AI Agency Rajkot, AI Automation Rajkot, AI Creative Studio Rajkot, AI Agency Surat, AI Agency Vadodara, AI Agency Gandhinagar, AI Video Generator for Business, AI Ad Video Creation, AI Reels, AI Social Media Videos, AI Product Video, AI Promotional Video, Business AI Automation, AI Workflow Automation, WhatsApp Automation, WhatsApp AI Chatbot, AI Voice Agent, CRM Automation, Web Development Agency, Custom Website Development"
+      },
+      { name: "author", content: "Hevion Studio" },
       { name: "theme-color", content: "#6f7a3a" },
-      { property: "og:title", content: "Hevin — AI Ads, Social Media" },
+      { property: "og:title", content: "Hevion Studio | AI Ads, Web & Automation" },
       {
         property: "og:description",
         content:
-          "Hevin is a premium AI creative studio producing AI ads, engaging social media posts that stops the scroll and drives results.",
+          "Hevion Studio is a premium AI creative studio in Gujarat producing AI ads, smart automations, and custom web development.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Hevin — AI Ads, Social Media" },
+      { name: "twitter:title", content: "Hevion Studio | Premium AI Agency" },
       {
         name: "twitter:description",
-        content: "Hevin is a premium AI creative studio producing AI ads, engaging social media posts that stops the scroll and drives results.",
+        content: "Hevion Studio provides high-end AI Video Production, WhatsApp Automation, and Web Development for businesses in Gujarat.",
       },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/0QouOLJEq3To54A1VGZd50ZmLIO2/social-images/social-1784297207365-1000076782.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/0QouOLJEq3To54A1VGZd50ZmLIO2/social-images/social-1784297207365-1000076782.webp" },
