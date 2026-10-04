@@ -78,7 +78,7 @@ export function Hero() {
       <div className="mx-auto max-w-6xl px-6 text-center">
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-[var(--olive)]/40 bg-[var(--olive)]/10 px-4 py-1.5 text-xs font-medium tracking-wide text-[var(--olive)]">
           <Sparkles className="h-3.5 w-3.5" />
-          AI Creative Studio
+          Premium Production Studio
         </div>
 
         <h1 className="animate-fade-up font-display text-5xl leading-[1.02] text-foreground sm:text-7xl md:text-[92px]">
