@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import {
   ArrowRight, ArrowUpRight,
-  Sparkles,
+  Sparkles, Triangle, Circle, Wind, Hexagon, Aperture, Star,
   Film,
   Package,
   Video,
@@ -584,8 +584,14 @@ function Field({
 }
 
 export function Marquee() {
-  const logos = [
-    "VOGUE", "GQ", "ELLE", "HARPER'S BAZAAR", "FORBES", "VANITY FAIR", "WIRED",
+  const brands = [
+    { name: "LUMIERE", icon: <Sparkles className="h-5 w-5" />, font: "font-serif" },
+    { name: "VERTEX", icon: <Triangle className="h-5 w-5" />, font: "font-sans font-bold" },
+    { name: "AURA", icon: <Circle className="h-5 w-5" />, font: "font-display tracking-widest" },
+    { name: "ZEPHYR", icon: <Wind className="h-5 w-5" />, font: "font-sans font-light italic" },
+    { name: "NEXUS", icon: <Hexagon className="h-5 w-5" />, font: "font-mono font-bold tracking-tight" },
+    { name: "STUDIO ZERO", icon: <Aperture className="h-5 w-5" />, font: "font-sans font-semibold tracking-wide" },
+    { name: "NOVA", icon: <Star className="h-5 w-5" />, font: "font-serif italic" }
   ];
   return (
     <section className="relative overflow-hidden py-16 border-y border-border/40 bg-card/30">
@@ -593,9 +599,10 @@ export function Marquee() {
       <div className="absolute right-0 top-0 z-10 w-32 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
       
       <div className="flex w-max" style={{ animation: "marquee 40s linear infinite" }}>
-        {[...logos, ...logos].map((logo, i) => (
-          <div key={i} className="flex items-center justify-center px-12 md:px-20 shrink-0">
-            <span className="font-display text-2xl md:text-3xl text-foreground/40 uppercase tracking-[0.2em]">{logo}</span>
+        {[...brands, ...brands].map((brand, i) => (
+          <div key={i} className="flex items-center justify-center gap-3 px-12 md:px-20 shrink-0 text-foreground/40 transition-colors hover:text-foreground/80">
+            {brand.icon}
+            <span className={`text-xl md:text-2xl uppercase ${brand.font}`}>{brand.name}</span>
           </div>
         ))}
       </div>
