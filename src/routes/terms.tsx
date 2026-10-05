@@ -16,14 +16,14 @@ function TermsOfService() {
         <section>
           <h2 className="font-display text-2xl sm:text-3xl mb-4 text-foreground">1. Agreement to Terms</h2>
           <p className="text-muted-foreground leading-relaxed">
-            By accessing or using the services provided by Hevin ("we", "our", or "us"), you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access our services. These terms apply to all clients, visitors, and others who access or use our AI creative production services.
+            By accessing or using the services provided by HeviOn ("we", "our", or "us"), you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access our services. These terms apply to all clients, visitors, and others who access or use our AI creative production services.
           </p>
         </section>
 
         <section>
           <h2 className="font-display text-2xl sm:text-3xl mb-4 text-foreground">2. Creative Services & AI Production</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Hevin operates as a premium AI creative studio providing AI advertisement videos, social media posts, AI product showcasing, and creative strategy. 
+            HeviOn operates as a premium AI creative studio providing AI advertisement videos, social media posts, AI product showcasing, and creative strategy. 
           </p>
           <ul className="list-disc pl-5 mt-4 space-y-2 text-muted-foreground leading-relaxed">
             <li><strong>Revisions:</strong> Each project scope includes a defined number of revision rounds. Additional revisions beyond the agreed scope will be billed at our standard hourly rate.</li>
@@ -53,7 +53,7 @@ function TermsOfService() {
         <section>
           <h2 className="font-display text-2xl sm:text-3xl mb-4 text-foreground">5. Limitation of Liability</h2>
           <p className="text-muted-foreground leading-relaxed">
-            In no event shall Hevin, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use our creative deliverables in the marketplace.
+            In no event shall HeviOn, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use our creative deliverables in the marketplace.
           </p>
         </section>
 

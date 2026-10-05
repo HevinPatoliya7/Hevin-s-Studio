@@ -241,7 +241,7 @@ export function Why() {
     <section className="relative py-28 sm:py-36">
       <div className="mx-auto max-w-7xl px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <div className="mb-4 text-xs uppercase tracking-[0.4em] text-[var(--olive)]">Why Hevin</div>
+          <div className="mb-4 text-xs uppercase tracking-[0.4em] text-[var(--olive)]">Why HeviOn</div>
           <h2 className="font-display text-4xl sm:text-6xl">Boutique thinking. Studio output.</h2>
         </Reveal>
 
@@ -416,7 +416,7 @@ export function Pricing() {
 const quotes = [
   {
     quote:
-      "Hevin replaced a ₹35L studio production with a two-week AI shoot that looked better than anything we'd made in years.",
+      "HeviOn replaced a ₹35L studio production with a two-week AI shoot that looked better than anything we'd made in years.",
     name: "Rohit V.",
     role: "Creative Director, D2C Beauty Brand",
   },
