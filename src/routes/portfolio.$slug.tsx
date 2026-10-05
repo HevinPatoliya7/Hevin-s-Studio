@@ -6,8 +6,8 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/portfolio/$slug")({
   head: ({ params }) => {
     const p = projectBySlug(params.slug);
-    const title = p ? `${p.title} — HeviOn` : "Case study — HeviOn";
-    const desc = p?.summary ?? "A cinematic AI campaign from HeviOn.";
+    const title = p ? `${p.title} — Hevion` : "Case study — Hevion";
+    const desc = p?.summary ?? "A cinematic AI campaign from Hevion.";
     return {
       meta: [
         { title },

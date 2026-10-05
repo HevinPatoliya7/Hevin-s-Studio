@@ -110,7 +110,7 @@ export function Footer() {
           {/* Bottom Bar */}
           <div className="mt-20 flex flex-col items-center justify-between gap-4 border-t border-border/40 pt-8 sm:flex-row">
             <div className="text-[13px] text-muted-foreground font-medium">
-              © {new Date().getFullYear()} HeviOn. All rights reserved.
+              © {new Date().getFullYear()} Hevion. All rights reserved.
             </div>
             <div className="text-[11px] font-semibold tracking-[0.2em] uppercase text-muted-foreground flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[var(--olive)] animate-pulse" />

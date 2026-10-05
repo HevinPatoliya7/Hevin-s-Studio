@@ -6,10 +6,10 @@ export function Loader() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const shown = sessionStorage.getItem("HeviOn-loader-shown");
+    const shown = sessionStorage.getItem("Hevion-loader-shown");
     if (shown) return;
     setShouldShow(true);
-    sessionStorage.setItem("HeviOn-loader-shown", "1");
+    sessionStorage.setItem("Hevion-loader-shown", "1");
     const t = setTimeout(() => setHidden(true), 2200);
     return () => clearTimeout(t);
   }, []);
@@ -29,7 +29,7 @@ export function Loader() {
         <div className="animate-fade-up relative z-10 flex flex-col items-center">
           <img 
             src="/logo.png?v=4" 
-            alt="HeviOn Logo" 
+            alt="Hevion Logo" 
             className="w-40 h-40 object-contain transition-transform duration-1000 hover:scale-105"
             style={{ 
               animation: "float 3s ease-in-out infinite",
@@ -40,7 +40,7 @@ export function Loader() {
             className="mt-6 font-display text-4xl tracking-tight text-foreground"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            HeviOn
+            Hevion
           </span>
         </div>
         

@@ -16,7 +16,7 @@ function PrivacyPolicy() {
         <section>
           <h2 className="font-display text-2xl sm:text-3xl mb-4 text-foreground">1. Introduction</h2>
           <p className="text-muted-foreground leading-relaxed">
-            Welcome to HeviOn. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
+            Welcome to Hevion. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
           </p>
           <p className="text-muted-foreground leading-relaxed mt-4">
             As a premium AI creative studio, confidentiality and data security are core to our operations, ensuring your brand assets and personal information are handled with the utmost care.

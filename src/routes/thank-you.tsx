@@ -4,8 +4,8 @@ import { Check } from "lucide-react";
 export const Route = createFileRoute("/thank-you")({
   head: () => ({
     meta: [
-      { title: "Thank you — HeviOn" },
-      { name: "description", content: "Your message reached HeviOn. We'll reply within one business day." },
+      { title: "Thank you — Hevion" },
+      { name: "description", content: "Your message reached Hevion. We'll reply within one business day." },
       { name: "robots", content: "noindex" },
     ],
   }),
