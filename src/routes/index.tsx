@@ -3,6 +3,7 @@ import {
   Contact,
   FAQ,
   Hero,
+  Marquee,
   Portfolio,
   Pricing,
   Process,
@@ -19,6 +20,7 @@ function Index() {
   return (
     <>
       <Hero />
+      <Marquee />
       <Services />
       <Portfolio />
       <Why />

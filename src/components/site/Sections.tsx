@@ -582,3 +582,29 @@ function Field({
     </div>
   );
 }
+
+export function Marquee() {
+  const logos = [
+    "VOGUE", "GQ", "ELLE", "HARPER'S BAZAAR", "FORBES", "VANITY FAIR", "WIRED",
+  ];
+  return (
+    <section className="relative overflow-hidden py-16 border-y border-border/40 bg-card/30">
+      <div className="absolute left-0 top-0 z-10 w-32 h-full bg-gradient-to-r from-background to-transparent pointer-events-none" />
+      <div className="absolute right-0 top-0 z-10 w-32 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
+      
+      <div className="flex w-max" style={{ animation: "marquee 40s linear infinite" }}>
+        {[...logos, ...logos].map((logo, i) => (
+          <div key={i} className="flex items-center justify-center px-12 md:px-20 shrink-0">
+            <span className="font-display text-2xl md:text-3xl text-foreground/40 uppercase tracking-[0.2em]">{logo}</span>
+          </div>
+        ))}
+      </div>
+      <style>{`
+        @keyframes marquee {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+      `}</style>
+    </section>
+  );
+}
