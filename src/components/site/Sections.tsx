@@ -585,13 +585,14 @@ function Field({
 
 export function Marquee() {
   const brands = [
-    { name: "LUMIERE", icon: <Sparkles className="h-5 w-5" />, font: "font-serif" },
-    { name: "VERTEX", icon: <Triangle className="h-5 w-5" />, font: "font-sans font-bold" },
-    { name: "AURA", icon: <Circle className="h-5 w-5" />, font: "font-display tracking-widest" },
-    { name: "ZEPHYR", icon: <Wind className="h-5 w-5" />, font: "font-sans font-light italic" },
-    { name: "NEXUS", icon: <Hexagon className="h-5 w-5" />, font: "font-mono font-bold tracking-tight" },
-    { name: "STUDIO ZERO", icon: <Aperture className="h-5 w-5" />, font: "font-sans font-semibold tracking-wide" },
-    { name: "NOVA", icon: <Star className="h-5 w-5" />, font: "font-serif italic" }
+    { name: "OpenAI", icon: "openai" },
+    { name: "Vercel", icon: "vercel" },
+    { name: "Stripe", icon: "stripe" },
+    { name: "Figma", icon: "figma" },
+    { name: "Linear", icon: "linear" },
+    { name: "Framer", icon: "framer" },
+    { name: "Notion", icon: "notion" },
+    { name: "LVMH", icon: "spotify" },
   ];
   return (
     <section className="relative overflow-hidden py-16 border-y border-border/40 bg-card/30">
@@ -599,17 +600,20 @@ export function Marquee() {
       <div className="absolute right-0 top-0 z-10 w-32 h-full bg-gradient-to-l from-background to-transparent pointer-events-none" />
       
       <div className="flex w-max" style={{ animation: "marquee 40s linear infinite" }}>
-        {[...brands, ...brands].map((brand, i) => (
-          <div key={i} className="flex items-center justify-center gap-3 px-12 md:px-20 shrink-0 text-foreground/40 transition-colors hover:text-foreground/80">
-            {brand.icon}
-            <span className={`text-xl md:text-2xl uppercase ${brand.font}`}>{brand.name}</span>
+        {[...brands, ...brands, ...brands].map((brand, i) => (
+          <div key={i} className="flex items-center justify-center px-12 md:px-20 shrink-0 opacity-40 grayscale transition-all duration-300 hover:opacity-100 hover:grayscale-0">
+            <img 
+              src={`https://cdn.simpleicons.org/${brand.icon}/737373`} 
+              alt={brand.name} 
+              className="h-8 md:h-10 object-contain dark:invert"
+            />
           </div>
         ))}
       </div>
       <style>{`
         @keyframes marquee {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-33.333%); }
         }
       `}</style>
     </section>
